@@ -1,0 +1,14 @@
+@media screen and (max-width: 850px) {
+  #desktopNav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  #hamburger-nav i {
+    height: 40px;
+  }
+}
