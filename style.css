@@ -290,6 +290,13 @@
    margin-bottom: 15px;
  }
 
+ .article-container.ai {
+   display: flex;
+   flex-direction: column;
+   text-wrap: nowrap;
+ }
+
+
  /* PROJECTS */
  #projects .details-container {
    display: flex;
@@ -299,10 +306,20 @@
 
  #projects .article-container {
    display: flex;
+   height: 250px;
+   width: 280px;
  }
 
  #projects img {
    border-radius: 2rem;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+ }
+
+ #projects h2 {
+   font-size: 1.1rem;
  }
 
  /* CONTACT */
