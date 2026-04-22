@@ -1,4 +1,12 @@
 @media screen and (max-width: 850px) {
+  section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+  }
+
   #desktopNav {
     display: none;
   }
@@ -9,7 +17,7 @@
   }
 
   #hamburger-nav i {
-    height: 40px;
+    font-size: 40px;
   }
 
   #profile {
@@ -17,9 +25,33 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  .section-container,
+  .about-containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 650px) {
+  section {
+    margin: 1rem;
+    padding-top: 2vh;
+  }
+
   .title {
     font-size: 2rem;
   }
@@ -34,5 +66,53 @@
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+  }
+
+  #profile {
+    gap: 2rem;
+    height: auto;
+  }
+
+  #profile .myPic img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-pic {
+    width: 200px;
+  }
+
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #experience .details-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .details-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  .text-container {
+    padding: 0 1rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
